@@ -12,18 +12,18 @@
     <div class="login">
         <h1>Boston House Price Prediction</h1>
         <form action="{{ url_for('predict')}}"method="post">
-            <input type="text" name="CRIM" placeholder="CRIM", required="required"/><br>
-            <input type="text" name="ZN" placeholder="ZN", required="required"/><br>
-            <input type="text" name="INDUS" placeholder="INDUS", required="required"/><br>
-            <input type="text" name="CHAS" placeholder="CHAS", required="required"/><br>
-            <input type="text" name="NOX" placeholder="NOX", required="required"/><br>
-            <input type="text" name="RM" placeholder="RM", required="required"/><br>
-            <input type="text" name="Age" placeholder="Age", required="required"/><br>
-            <input type="text" name="DIS" placeholder="DIS", required="required"/><br>
-            <input type="text" name="RAD" placeholder="RAD", required="required"/><br>
-            <input type="text" name="TAX" placeholder="TAX", required="required"/><br>
-            <input type="text" name="PTRATIO" placeholder="PTRATIO", required="required"/><br>
-            <input type="text" name="LSTAT" placeholder="LSTAT", required="required"/><br>
+            <input type="text" name="Per capita crime rate by town" placeholder="CRIM", required="required"/><br>
+            <input type="text" name="Proportion of residential land zoned for lots over 25000 sq.ft." placeholder="ZN", required="required"/><br>
+            <input type="text" name="Proportion of non-retail business acres per town" placeholder="INDUS", required="required"/><br>
+            <input type="text" name="Charles River dummy variable (1 if tract bounds river; 0 otherwise)" placeholder="CHAS", required="required"/><br>
+            <input type="text" name="Nitric Oxide concentration (ppm)" placeholder="NOX", required="required"/><br>
+            <input type="text" name="Average Rooms per dwwelling" placeholder="RM", required="required"/><br>
+            <input type="text" name="Proportion of owner occupied units built prior to 1940" placeholder="AGE", required="required"/><br>
+            <input type="text" name="Weighted distance to five Boston employment centres" placeholder="DIS", required="required"/><br>
+            <input type="text" name="Index of accessibility to radial highways" placeholder="RAD", required="required"/><br>
+            <input type="text" name="Full-value property-tax rate per $10000" placeholder="TAX", required="required"/><br>
+            <input type="text" name="Pupil-Teacher Ratio by town" placeholder="PTRATIO", required="required"/><br>
+            <input type="text" name="% Lower Status Proportion" placeholder="LSTAT", required="required"/><br>
 
             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
         </form>
