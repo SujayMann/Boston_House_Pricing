@@ -28,8 +28,8 @@ def predict():
     final_input = scaler.transform(np.array(data).reshape(1, -1))
     print(final_input)
     output = float(regmodel.predict(final_input)[0])
-    output.__round__()
-    return render_template('home.html', prediction_text="The predicted house price is {}".format(output))
+    # round(output, 4)
+    return render_template('home.html', prediction_text="The predicted house price is {:.4f} ($1000s)".format(output))
 
 if __name__ == "__main__":
     try:
