@@ -32,6 +32,6 @@ def predict():
 
 if __name__ == "__main__":
     try:
-        app.run(debug=False)
+        app.run(debug=False, port=4000)
     except Exception as e:
         print(e)
