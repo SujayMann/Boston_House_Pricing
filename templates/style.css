@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    background-image: url("Codes_Python\\ML\\End_2_End_Project\\Boston_House_Pricing\\templates\\background.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 99.8%;
+    border: 2px solid;
+    overflow: hidden;
+}
+.apple{
+    width: 100%;
+    
+}
+.test
+{
+    display: flex;
+    justify-content: center;   
+    align-content: center;
+}
+
+.mera_form
+{
+    align-content: center;
+    position: relative;
+    text-align: center;
+    background-color: rgba(232, 237, 237, 0.274);
+    backdrop-filter: blur(1.3px);
+    width: 40%;
+    border-radius: 40px;
+}
+.mera_form h1{
+    text-decoration: underline;
+    font-size: 24px;
+    animation: scale-text 1s infinite alternate;
+}
+
+input[type="text"]::placeholder {
+    transition: transform 0.3s ease-out;
+    transform-origin: top left;
+  }
+
+  .mera_form:hover input[type="text"]::placeholder {
+    transform: translateY(-20%) scale(0.9);
+  }
+
+.hero{
+    align-content: center;
+    width: 80%;
+    height: 25px;
+    margin: 5px;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+@keyframes scale-text {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+.response{
+    display: inline-block;
+    width: 70%;
+    height: 60px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+
+@media (max-width: 576px) {
+    .mera_form {
+        width: 90%; 
+    }
+
+    .hero {
+        width: 90%; 
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 791px) {
+    .mera_form {
+        width: 70%; 
+    }
+
+    .hero {
+        width: 70%; 
+    }
+}
+
+
+@media (min-width: 792px) and (max-width: 1199px) {
+    .mera_form {
+        width: 60%; 
+    }
+
+    .hero {
+        width: 60%; 
+    }
+}
