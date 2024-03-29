@@ -15,7 +15,7 @@ Add dependencies to requirements.txt
 
 Create a Regression model ```Boston_Pricing.ipynb``` to use for the predictions
 
-Pickle the model as ```regmodel.pkl``` to use in the flask app
+Pickle the model as ```model.pkl``` to use in the flask app
 
 ```
 pickle.dump()
@@ -26,7 +26,7 @@ Create a Flask app ```app.py```
 Create a simple html page ```home.html``` to take inputs for the model
 
 Provide the inputs to the model inside the flask app
-* Use ```scaling.pkl``` to transform the input values
+* Use ```scaler.pkl``` to transform the input values
 * Display the predicted value on the webpage
 
 Run and test the app
