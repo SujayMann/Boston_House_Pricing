@@ -30,7 +30,7 @@ def predict():
     print(data, "hello")
     final_input = scaler.transform(np.array(data).reshape(1, -1))
     print(final_input)
-    output = float(tree_model.predict(final_input)[0])
+    output = float(tree_model.predict(final_input))
     return render_template('home.html', prediction_text="The predicted house price is {:.3f} ($1000s)".format(output))
 
 if __name__ == "__main__":
