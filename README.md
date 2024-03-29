@@ -13,7 +13,7 @@ conda create -p venv python==3.10 -y
 ```
 Add dependencies to requirements.txt
 
-Create a Linear Regression model ```Boston_Pricing.ipynb``` to use for the predictions
+Create a Regression model ```Boston_Pricing.ipynb``` to use for the predictions
 
 Pickle the model as ```regmodel.pkl``` to use in the flask app
 
